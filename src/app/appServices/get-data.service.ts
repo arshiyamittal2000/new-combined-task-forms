@@ -9,5 +9,5 @@ export class GetDataService {
 
   data1:any;
   data2:any;
-
+  data3:any;
 }

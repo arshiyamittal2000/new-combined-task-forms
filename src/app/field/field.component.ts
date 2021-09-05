@@ -10,11 +10,13 @@ export class fieldComponent implements OnInit {
 
   input1 = '';
   input2 = '';
+  input3 = '';
   constructor(private service: GetDataService) { }
 
   ngOnInit(): void {
     this.input1 = this.service.data1;
     this.input2 = this.service.data2;
+    this.input3 = this.service.data3;
   }
 
 }

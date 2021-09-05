@@ -1,1 +1,13 @@
+
 <router-outlet></router-outlet>
+<h1>Reactive Forms Task</h1>
+
+<nav>
+  <a (click)="toggleEditor('name')">Name Editor</a>
+  
+  <a (click)="toggleEditor('profile')">Profile Editor</a>
+</nav>
+
+<app-name-editor *ngIf="showNameEditor"></app-name-editor>
+
+<app-profile-editor *ngIf="showProfileEditor"></app-profile-editor>

@@ -9,6 +9,7 @@ import { GetDataService } from '../appServices/get-data.service';
 export class subjectsComponent implements OnInit {
 text1 = '';
 text2 = '';
+text3 = '';
 constructor(
     private service: GetDataService,
     private router: Router) { }
@@ -18,6 +19,7 @@ constructor(
   sendData(){
     this.service.data1 = this.text1;
     this.service.data2 = this.text2;
+    this.service.data3 = this.text3;
     this.router.navigate(['field']);
   }
 
